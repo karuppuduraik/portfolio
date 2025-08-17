@@ -1,0 +1,245 @@
+/* =======================
+   responsive.css (Fixed Name Display)
+   ======================= */
+
+/* General Responsive Fixes */
+@media (max-width: 1200px) {
+  .content {
+    width: 80% !important;
+    padding: 30px !important;
+  }
+  .my-img img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .content {
+    width: 90% !important;
+    padding: 20px !important;
+  }
+  .my-img img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  
+  /* Projects and Certifications grid */
+  .project-item, 
+  .certification-item {
+    width: 45% !important;
+    height: auto !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Medium Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Fix for name display */
+  .content h2 {
+    font-size: clamp(1.8rem, 5vw, 3rem) !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  /* Sidebar compact */
+  .sidebar {
+    width: 50px !important;
+  }
+  .sidebar:hover {
+    width: 140px !important;
+  }
+
+  /* Home section */
+  .content {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 15px !important;
+    text-align: center !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+  .my-img img {
+    position: relative !important;
+    margin: 15px auto !important;
+    display: block !important;
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  /* Fix overflow: All sections in column */
+  .edu-section,
+  .main-skill,
+  .certification-container,
+  .project-container,
+  .contact-container {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    height: auto !important;
+  }
+
+  /* Each card takes full width without overflow */
+  .education-item,
+  .container1,
+  .container2,
+  .certification-item,
+  .project-item,
+  .con-contain1,
+  .con-contain2 {
+    width: 90% !important;
+    max-width: 600px !important;
+    height: auto !important;
+    margin: 10px 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Skills Section Fix */
+  #skills {
+    height: auto !important;
+    padding: 20px 0 !important;
+  }
+
+  .main-skill {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .container1,
+  .container2 {
+    position: relative !important;
+    width: 90% !important;
+    height: auto !important;
+    margin: 10px 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+  }
+
+  /* Skills grid layout */
+  .tech-items,
+  .soft-items {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
+    justify-items: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Adjust skill items */
+  .tech-items div,
+  .soft-items div {
+    width: 100% !important;
+    max-width: 140px !important;
+    padding: 10px !important;
+  }
+
+  /* Reset transforms on soft skills */
+  #ad, #self {
+    transform: none !important;
+  }
+
+  /* Hide the aqua line in contact section */
+  .line {
+    display: none !important;
+  }
+
+  /* Contact form adjustments */
+  .contact-container {
+    flex-direction: column !important;
+  }
+  
+  .con-contain1,
+  .con-contain2 {
+    width: 90% !important;
+    height: auto !important;
+    padding: 20px !important;
+    margin: 10px 0 !important;
+    border-radius: 20px !important;
+  }
+
+  /* Project and certification items */
+  .project-item,
+  .certification-item {
+    width: 90% !important;
+    height: auto !important;
+  }
+}
+
+/* Small Mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Enhanced name display for small screens */
+  .content h2 {
+    font-size: clamp(1.5rem, 8vw, 2rem) !important;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  
+  .content h3 {
+    font-size: 1rem !important;
+  }
+  
+  .content p {
+    font-size: 0.9rem !important;
+    line-height: 1.4;
+  }
+  
+  .my-img img {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  /* Single column for skills */
+  .tech-items,
+  .soft-items {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Contact form inputs */
+  .con-contain2 input {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  
+  .con-contain2 button {
+    transform: none !important;
+    width: 100% !important;
+  }
+}
+
+/* Very Small Mobiles (max-width: 360px) */
+@media (max-width: 360px) {
+  /* Final adjustments for very small screens */
+  .content h2 {
+    font-size: clamp(1.3rem, 7vw, 1.8rem) !important;
+    padding: 0 5px;
+  }
+  
+  .content h3 {
+    font-size: 0.9rem !important;
+  }
+  
+  .my-img img {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  
+  /* Ensure text doesn't overflow */
+  .content {
+    padding: 10px !important;
+  }
+}
