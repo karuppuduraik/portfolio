@@ -196,6 +196,8 @@ body{
     .body{
         margin-left: 0px;
     }
+    #img2{display:none;
+         }
 
     
 }
@@ -212,6 +214,8 @@ body{
         width:2.5em;
         height: 5em;
     }
+    #img2{display:none;
+         }
     
 }
 .main2{
@@ -782,6 +786,7 @@ footer{
     font-family: var(--font-style);
     text-align:center;
 }
+
 
 
 
